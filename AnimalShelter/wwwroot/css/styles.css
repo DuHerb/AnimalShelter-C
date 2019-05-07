@@ -1,0 +1,14 @@
+h1 {
+  color: aqua;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+a {
+  margin: 10px;
+}
+
+a:hover {
+  color: red;
+}

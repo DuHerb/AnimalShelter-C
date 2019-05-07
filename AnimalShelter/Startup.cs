@@ -44,7 +44,7 @@ namespace AnimalShelter
 
   public static class DBConfiguration
   {
-    public static string ConnectionString = "server=localhost;user id=root;password=root;port=8889;database=animal_shelter;";
+    public static string ConnectionString = "server=localhost;user id=root;password=root;port=8889;database=animal_shelter;convert zero datetime=True";
   }
 
 }

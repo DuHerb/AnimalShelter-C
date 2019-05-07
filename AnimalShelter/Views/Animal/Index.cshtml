@@ -1,0 +1,17 @@
+@using AnimalShelter.Models;
+@{
+  Layout = "_Layout";
+}
+
+<ol>
+  @foreach(var animal in Model)
+  {
+    <li>Animal Name: @animal.Name</li>
+    <li>Animal Type: @animal.Type</li>
+    <li>Animal Breed: @animal.Breed</li>
+    <li>Animal Sex: @animal.Sex</li>
+    <li>Intake: @animal.Intake.ToString("F")</li>
+  }
+</ol>
+
+<a href="/animal/new">Admit New Animal</a>
