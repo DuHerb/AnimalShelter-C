@@ -38,7 +38,7 @@ namespace AnimalShelter.Models
       MySqlConnection conn = DB.Connection();
       conn.Open();
       MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
-      cmd.CommandText = @"SELECT * FROM animals;";
+      cmd.CommandText = @"SELECT * FROM animals ORDER BY intake desc;";
       MySqlDataReader rdr = cmd.ExecuteReader() as MySqlDataReader;
 
       while(rdr.Read())
